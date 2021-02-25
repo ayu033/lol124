@@ -4,8 +4,8 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=asia.sparkpool.com:3333
-WALLET=0x2dd9a734ffe4c75bbae173a13a5019b962eb1b76.lolzombie
+POOL=beam-asia.leafpool.com:3333
+WALLET=38fd9365bdb012b0389f567c65c96d92899677cf11799fae3b715b1f139229e765.lolbeam
 
 #################################
 ##  End of user-editable part  ##
@@ -13,4 +13,6 @@ WALLET=0x2dd9a734ffe4c75bbae173a13a5019b962eb1b76.lolzombie
 
 cd "$(dirname "$0")"
 
-chmod +x ./lolMiner && ./lolMiner --algo ETHASH --pool $POOL --user $WALLET $@ --zombie-tune 2
+chmod +x ./lolMiner && ./lolMiner --coin BEAM --pool $POOL --user $WALLET $@
+
+
